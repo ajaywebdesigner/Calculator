@@ -874,7 +874,7 @@ function durationText(m){var y=Math.floor(m/12),mo=m%12;if(y&&mo)return y+' yr '
     new ResizeObserver(function(){var w=$('chartWrap').clientWidth;if(w&&Math.abs(w-lastW)>2){lastW=w;if(R)renderChart();}}).observe($('chartWrap'));
   }
 
-  /* ---------- boot ---------- */
+  /* ---------- boot --------- */
   var saved=load(),d0=defaults('INR');
   S=d0;
   if(saved&&saved.state){Object.keys(d0).forEach(function(k){var v=saved.state[k];if(v!==null&&v!==undefined)S[k]=v;});if(!CUR[S.currency])S.currency='INR';}
